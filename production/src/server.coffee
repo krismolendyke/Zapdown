@@ -15,7 +15,8 @@ helper setup: -> options(); pages(); articles()
 helper options: ->
     @options =
         author: 'Kris Molendyke'
-        headerImg: 'header.png'
+        headerTitle: 'Zapdown!'
+        # headerImg: 'header.png'
 
 helper pages: ->
     files = fs.readdirSync markdownDir
@@ -110,7 +111,12 @@ layout ->
         body ->
             header ->
                 a href: '/', ->
-                    img src: "/img/#{@options.headerImg}", alt: 'Home'
+                    if @options.headerImg
+                        img src: "/img/#{@options.headerImg}", alt: 'Home'
+                    else if @options.headerTitle
+                        h1 -> @options.headerTitle
+                    else
+                        h1 -> 'Zapdown!'
             nav ->
                 ul ->
                     for link in @pageLinks
@@ -120,4 +126,5 @@ layout ->
                     for link in @articleLinks
                         li -> a href: "/#{link.href}", -> link.title
             div id: 'content', -> @content
-            footer -> "&copy; 2011 #{@options.author}"
+            footer ->
+                p -> "&copy; 2011 #{@options.author}"

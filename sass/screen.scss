@@ -60,6 +60,15 @@ a {
     @include link-colors(#000000, #808080, #070707);
 }
 
+blockquote {
+    border-top: 1px dotted #e0e0ef;
+    border-bottom: 1px dotted #e0e0ef;
+}
+
+footer {
+    border-top: 1px dotted #e0e0ef;
+}
+
 // Syntax rules from the highlight.js project, made Sassy with some
 // modifications.  Original author's details follow.
 
