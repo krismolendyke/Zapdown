@@ -16,7 +16,7 @@ helper options: ->
     @options =
         author: 'Kris Molendyke'
         headerTitle: 'Zapdown!'
-        # headerImg: 'header.png'
+        headerImg: 'header.png'
 
 helper pages: ->
     files = fs.readdirSync markdownDir

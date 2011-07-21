@@ -23,7 +23,6 @@ body {
 header, footer {
     @include full;
     margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 nav {
@@ -67,6 +66,7 @@ blockquote {
 
 footer {
     border-top: 1px dotted #e0e0ef;
+    margin-bottom: 1em;
 }
 
 // Syntax rules from the highlight.js project, made Sassy with some

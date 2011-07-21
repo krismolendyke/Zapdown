@@ -14,7 +14,7 @@ Then you can visit [http://localhost:5678](http://localhost:5678 "Zapdown! local
 
 Hand waving, mostly.  **Zapdown!** is built on a lot of other amazing open source projects.
 
-At its core it is just a pile of [CoffeeScript](http://jashkenas.github.com/coffee-script/) on top of [node.js](http://nodejs.org/) and a few modules.  The fun [Zappa](https://github.com/mauricemach/zappa) framework allows for writing small web applications in CoffeeScript, in a single file.  That file is `production/src/server.coffee` if you're curious.  It's pretty small and allows you to customize **Zapdown!** easily.
+At its core it is just a pile of [CoffeeScript](http://jashkenas.github.com/coffee-script/) on top of [node.js](http://nodejs.org/) and a few modules.  The fun [Zappa](https://github.com/mauricemach/zappa) framework allows for writing small web applications in CoffeeScript, in a single file.  That file is `production/src/server.coffee`.  It's pretty small and allows you to customize **Zapdown!** easily.
 
 The `server.coffee` file makes use of a few node.js modules, most notably [node-markdown](https://github.com/andris9/node-markdown) for translating Markdown into HTML and a slightly modified [highlight.js](https://github.com/krismolendyke/highlight.js) for marking up `<code>` blocks on the server.
 
