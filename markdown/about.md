@@ -10,6 +10,12 @@ Using **Zapdown!** is easy.  All you need to do is:
 
 Then you can visit [http://localhost:5678](http://localhost:5678 "Zapdown! localhost") and read your published Markdown!
 
+## File names
+
+In addition to placing your Markdown files in the correct folder and naming them with a `.md` extension you should name them with dashed titles.  This naming convention dictates the titles of your *pages* and *articles* as they appear in navigation links and browser titles.
+
+For instance, a file named, `my-great-article.md`, will be translated into a navigation link that looks like this: [My Great Article](#).
+
 ## Whoa, whoa, whoa!  What's going on here?
 
 Hand waving, mostly.  **Zapdown!** is built on a lot of other amazing open source projects.
